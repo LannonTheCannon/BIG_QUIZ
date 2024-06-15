@@ -4,7 +4,7 @@
 
 import pgzrun
 import pygame
-import random
+import secrets
 
 WIDTH = 950
 HEIGHT = 645
@@ -115,7 +115,7 @@ questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11,
              q30, q31, q32, q33, q34, q35, q36, q37, q38,
              q39]
              
-random.shuffle(questions)
+secrets.SystemRandom().shuffle(questions)
 
 question = questions.pop(0)
 
